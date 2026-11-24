@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YSP CONNECT | युवा संगठन परसवानी</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+margin:0;padding:16px;min-height:100vh;
+background:#eef2f7;font-family:Arial,sans-serif;
+display:flex;justify-content:center;align-items:center;
+}
+
+.container{
+width:100%;max-width:480px;background:white;
+padding:20px;border-radius:18px;
+box-shadow:0 5px 22px rgba(0,0,0,.10);
+}
+
+.hidden{display:none!important}
+
+h1,h2,h3{color:#173b67}
+h1,h2{text-align:center}
+
+button{
+width:100%;padding:13px;margin-top:9px;
+border:0;border-radius:9px;
+background:#173b67;color:white;
+font-weight:bold;font-size:14px;cursor:pointer;
+}
+
+button:disabled{opacity:.6}
+
+input,textarea,select{
+width:100%;padding:12px;margin:8px 0;
+border:1px solid #ccc;border-radius:8px;
+font-size:15px;
+}
+
+textarea{min-height:85px;resize:vertical}
+
+.subtitle{
+text-align:center;color:#64748b;
+margin-bottom:20px;
+}
+
+.hero{
+background:linear-gradient(135deg,#102c50,#2563eb);
+color:white;padding:27px 16px;
+border-radius:15px;text-align:center;
+margin-bottom:18px;
+}
+
+.hero h1{color:white;font-size:30px;margin:5px}
+.hero h2{color:white;font-size:20px;margin:10px 0}
+.hero p{font-size:13px;line-height:1.6}
+
+.logo{
+width:75px;height:75px;
+border:2px solid white;border-radius:50%;
+display:flex;align-items:center;justify-content:center;
+font-size:25px;font-weight:bold;
+margin:auto auto 12px;
+}
+
+.home-card{
+background:#f1f5f9;padding:15px;
+border-radius:11px;margin:10px 0;
+text-align:center;
+}
+
+.home-card h3{margin:5px 0}
+.home-card p{font-size:13px;color:#64748b;line-height:1.5}
+
+.feature-grid{
+display:grid;grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.feature{
+background:#f1f5f9;padding:14px 8px;
+border-radius:10px;text-align:center;
+color:#173b67;font-size:13px;font-weight:bold;
+}
+
+.feature span{
+display:block;font-size:22px;margin-bottom:7px;
+}
+
+.switch{
+text-align:center;margin-top:16px;
+color:#173b67;text-decoration:underline;
+cursor:pointer;font-size:14px;
+}
+
+#message{
+text-align:center;margin:14px 0;
+font-size:14px;overflow-wrap:anywhere;
+line-height:1.5;
+}
+
+.footer{
+text-align:center;color:#888;
+font-size:12px;margin-top:22px;
+}
+
+.dashboard-card,.member-card{
+background:#f1f5f9;padding:15px;
+border-radius:10px;margin:13px 0;
+overflow-wrap:anywhere;
+}
+
+.member-card{
+border:1px solid #ddd;background:white;
+}
+
+.member-card p{font-size:14px;margin:7px 0}
+
+.profile-label{font-weight:bold;color:#173b67}
+
+.approve-btn{background:#16803c}
+.logout-btn{background:#b42318}
+.back-btn{background:#64748b}
+
+.section-title{
+border-bottom:2px solid #173b67;
+padding-bottom:7px;margin-top:24px;
+}
+
+.small{font-size:12px;color:#666}
+
+.info-card{
+background:#eaf2ff;padding:13px;
+border-radius:9px;margin:10px 0;
+border-left:4px solid #2563eb;
+}
+
+.digital-card{
+background:linear-gradient(135deg,#173b67,#2563eb);
+color:white;padding:19px;
+border-radius:14px;margin:15px 0;
+}
+
+.digital-card h3{color:white;margin-top:0}
+.digital-card p{font-size:14px}
+
+.admin-form{
+border:1px solid #ddd;
+border-radius:10px;padding:13px;margin:13px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HOME PAGE -->
+
+<div id="homeBox">
+
+<div class="hero">
+
+<div class="logo">YSP</div>
+
+<h1>YSP CONNECT</h1>
+
+<h2>युवा संगठन परसवानी</h2>
+
+<p>
+युवा एकता • सामाजिक जागरूकता • ग्रामीण विकास
+</p>
+
+<p>
+युवाओं को जोड़ना, समाज में जागरूकता बढ़ाना
+और गाँव के विकास में योगदान देना।
+</p>
+
+</div>
+
+<div class="feature-grid">
+
+<div class="feature">
+<span>👥</span>
+सदस्यता व्यवस्था
+</div>
+
+<div class="feature">
+<span>📢</span>
+सूचनाएँ एवं कार्यक्रम
+</div>
+
+<div class="feature">
+<span>🪪</span>
+डिजिटल सदस्यता कार्ड
+</div>
+
+<div class="feature">
+<span>🤝</span>
+शिकायत एवं सुझाव
+</div>
+
+<div class="feature">
+<span>🏅</span>
+पदाधिकारी सूची
+</div>
+
+<div class="feature">
+<span>🌱</span>
+सामाजिक विकास
+</div>
+
+</div>
+
+<div class="home-card">
+<h3>हमारा उद्देश्य</h3>
+<p>
+युवाओं में एकता, सहयोग, सामाजिक जिम्मेदारी
+और जनहित के कार्यों को बढ़ावा देना।
+</p>
+</div>
+
+<h3 class="section-title">YSP CONNECT में आपका स्वागत है</h3>
+
+<button type="button" id="memberLoginOpen">
+👤 MEMBER LOGIN
+</button>
+
+<button type="button" id="ownerLoginOpen">
+🔐 OWNER LOGIN
+</button>
+
+<button type="button" id="registerOpen">
+➕ CREATE NEW ACCOUNT
+</button>
+
+<p class="small" style="text-align:center">
+नए सदस्यों का Account Owner की अनुमति के बाद Active होगा।
+</p>
+
+</div>
+
+
+<!-- LOGIN -->
+
+<div id="loginBox" class="hidden">
+
+<h2 id="loginHeading">LOGIN</h2>
+
+<p class="subtitle" id="loginSubtitle">
+YSP CONNECT में लॉगिन करें
+</p>
+
+<form id="loginForm">
+
+<input type="email" id="loginEmail"
+placeholder="Email Address" required>
+
+<input type="password" id="loginPassword"
+placeholder="Password" required>
+
+<button type="submit" id="loginButton">
+LOGIN
+</button>
+
+</form>
+
+<p class="switch" id="loginRegister">
+CREATE NEW ACCOUNT
+</p>
+
+<button type="button" class="back-btn" id="loginHome">
+← HOME PAGE
+</button>
+
+</div>
+
+
+<!-- REGISTRATION -->
+
+<div id="registerBox" class="hidden">
+
+<h2>New Member Registration</h2>
+
+<p class="subtitle">Yuva Sangathan Paraswani</p>
+
+<form id="registerForm">
+
+<input type="text" id="memberName"
+placeholder="Full Name" required>
+
+<input type="tel" id="memberMobile"
+placeholder="10 Digit Mobile Number"
+maxlength="10" pattern="[0-9]{10}" required>
+
+<input type="email" id="registerEmail"
+placeholder="Email Address" required>
+
+<input type="password" id="registerPassword"
+placeholder="Create Password (Minimum 6 Characters)"
+minlength="6" required>
+
+<button type="submit" id="registerButton">
+CREATE ACCOUNT
+</button>
+
+</form>
+
+<button type="button" class="back-btn" id="registerHome">
+← HOME PAGE
+</button>
+
+</div>
+
+
+<!-- OWNER DASHBOARD -->
+
+<div id="ownerDashboard" class="hidden">
+
+<h2>OWNER DASHBOARD</h2>
+
+<p style="text-align:center;color:#555">
+युवा संगठन परसवानी
+</p>
+
+<div class="dashboard-card">
+
+<h3>Welcome, Owner!</h3>
+
+<p id="ownerName"></p>
+<p id="ownerEmail"></p>
+
+<p style="color:green;font-weight:bold">
+● Account Active
+</p>
+
+</div>
+
+<button type="button" id="memberListButton">
+ALL MEMBERS
+</button>
+
+<button type="button" id="pendingButton">
+PENDING MEMBERS
+</button>
+
+<div id="memberResults"></div>
+
+<h3 class="section-title">सूचना प्रबंधन</h3>
+
+<form id="announcementForm" class="admin-form">
+
+<input id="announcementTitle"
+placeholder="सूचना का शीर्षक" required>
+
+<textarea id="announcementText"
+placeholder="सूचना लिखें" required></textarea>
+
+<button type="submit">सूचना प्रकाशित करें</button>
+
+</form>
+
+<h3 class="section-title">कार्यक्रम प्रबंधन</h3>
+
+<form id="eventForm" class="admin-form">
+
+<input id="eventTitle"
+placeholder="कार्यक्रम का नाम" required>
+
+<input id="eventDate" type="date" required>
+
+<input id="eventPlace"
+placeholder="कार्यक्रम का स्थान">
+
+<textarea id="eventDescription"
+placeholder="कार्यक्रम का विवरण"></textarea>
+
+<button type="submit">कार्यक्रम जोड़ें</button>
+
+</form>
+
+<h3 class="section-title">पदाधिकारी जोड़ें</h3>
+
+<form id="officeForm" class="admin-form">
+
+<input id="officeName"
+placeholder="पदाधिकारी का नाम" required>
+
+<input id="officeRole"
+placeholder="पद / जिम्मेदारी" required>
+
+<input id="officeMobile"
+placeholder="मोबाइल नंबर" maxlength="10">
+
+<button type="submit">पदाधिकारी जोड़ें</button>
+
+</form>
+
+<h3 class="section-title">सदस्यों की शिकायतें</h3>
+
+<button type="button" id="complaintListButton">
+शिकायतें देखें
+</button>
+
+<div id="complaintResults"></div>
+
+<button type="button" id="logoutButton"
+class="logout-btn">
+LOGOUT
+</button>
+
+</div>
+
+
+<!-- MEMBER DASHBOARD -->
+
+<div id="memberDashboard" class="hidden">
+
+<h2>MEMBER DASHBOARD</h2>
+
+<p style="text-align:center;color:#555">
+युवा संगठन परसवानी
+</p>
+
+<div class="dashboard-card">
+
+<h3>नमस्ते, <span id="memberDashboardName"></span> 👋</h3>
+
+<p>
+<span class="profile-label">Email:</span>
+<span id="memberDashboardEmail"></span>
+</p>
+
+<p>
+<span class="profile-label">Mobile:</span>
+<span id="memberDashboardMobile"></span>
+</p>
+
+<p style="color:green;font-weight:bold">
+● Account Active
+</p>
+
+</div>
+
+<h3 class="section-title">मेरा डिजिटल सदस्यता कार्ड</h3>
+
+<div class="digital-card">
+
+<h3>YSP CONNECT</h3>
+
+<p>युवा संगठन परसवानी</p>
+
+<hr>
+
+<p>नाम: <b id="cardName"></b></p>
+<p>सदस्य ID: <b id="cardId"></b></p>
+<p>मोबाइल: <b id="cardMobile"></b></p>
+<p>स्थिति: ACTIVE</p>
+
+</div>
+
+<h3 class="section-title">संगठन की सूचनाएँ 🔔</h3>
+
+<div id="announcementsList">
+<p class="small">सूचनाएँ लोड हो रही हैं...</p>
+</div>
+
+<h3 class="section-title">बैठक एवं कार्यक्रम 📅</h3>
+
+<div id="eventsList">
+<p class="small">कार्यक्रम लोड हो रहे हैं...</p>
+</div>
+
+<h3 class="section-title">पदाधिकारी एवं संपर्क सूची</h3>
+
+<div id="officeList">
+<p class="small">सूची लोड हो रही है...</p>
+</div>
+
+<h3 class="section-title">शिकायत एवं सुझाव</h3>
+
+<form id="complaintForm">
+
+<select id="complaintType" required>
+<option value="">चुनें</option>
+<option value="शिकायत">शिकायत</option>
+<option value="सुझाव">सुझाव</option>
+</select>
+
+<textarea id="complaintMessage"
+placeholder="अपनी शिकायत या सुझाव लिखें"
+required></textarea>
+
+<button type="submit" id="complaintButton">
+भेजें
+</button>
+
+</form>
+
+<div id="myComplaintResults"></div>
+
+<button type="button" id="memberLogoutButton"
+class="logout-btn">
+LOGOUT
+</button>
+
+</div>
+
+
+<p id="message"></p>
+
+<div class="footer">
+YSP CONNECT | Secure Community Management System
+<br>
+युवा संगठन परसवानी
+</div>
+
+</div>
+
+
+<script type="module">
+
+// FIREBASE IMPORTS
+
+import { initializeApp }
+from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+
+import {
+getAuth,createUserWithEmailAndPassword,
+signInWithEmailAndPassword,signOut
+}
+from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
+
+import {
+getFirestore,doc,setDoc,getDoc,getDocs,
+collection,updateDoc,serverTimestamp,
+addDoc,query,where
+}
+from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+
+
+// FIREBASE CONFIGURATION
+
+const firebaseConfig = {
+apiKey: "AIzaSyC2XH_IhmTxGymrQT4hZhOZIheuHyMqSmE",
+authDomain: "ysp-connect.firebaseapp.com",
+projectId: "ysp-connect",
+storageBucket: "ysp-connect.firebasestorage.app",
+messagingSenderId: "363206691502",
+appId: "1:363206691502:web:3c404932f222902624bb3f"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+
+// ELEMENTS
+
+const homeBox = document.getElementById("homeBox");
+const loginBox = document.getElementById("loginBox");
+const registerBox = document.getElementById("registerBox");
+const ownerDashboard = document.getElementById("ownerDashboard");
+const memberDashboard = document.getElementById("memberDashboard");
+const memberResults = document.getElementById("memberResults");
+const message = document.getElementById("message");
+
+let currentMember = null;
+let loginMode = "member";
+
+function showMessage(text,color="red"){
+message.textContent = text;
+message.style.color = color;
+}
+
+function hideAllScreens(){
+homeBox.classList.add("hidden");
+loginBox.classList.add("hidden");
+registerBox.classList.add("hidden");
+ownerDashboard.classList.add("hidden");
+memberDashboard.classList.add("hidden");
+}
+
+function showHome(){
+hideAllScreens();
+homeBox.classList.remove("hidden");
+showMessage("");
+}
+
+function addText(parent,tag,text){
+const el = document.createElement(tag);
+el.textContent = text;
+parent.appendChild(el);
+return el;
+}
+
+
+// HOME NAVIGATION
+
+document.getElementById("memberLoginOpen").onclick = ()=>{
+loginMode = "member";
+
+hideAllScreens();
+loginBox.classList.remove("hidden");
+
+document.getElementById("loginHeading").textContent = "MEMBER LOGIN";
+document.getElementById("loginSubtitle").textContent =
+"सदस्य अपने Account से Login करें";
+
+showMessage("");
+};
+
+document.getElementById("ownerLoginOpen").onclick = ()=>{
+loginMode = "owner";
+
+hideAllScreens();
+loginBox.classList.remove("hidden");
+
+document.getElementById("loginHeading").textContent = "OWNER LOGIN";
+document.getElementById("loginSubtitle").textContent =
+"Owner अपने Account से Login करें";
+
+showMessage("");
+};
+
+document.getElementById("registerOpen").onclick = ()=>{
+hideAllScreens();
+registerBox.classList.remove("hidden");
+showMessage("");
+};
+
+document.getElementById("loginRegister").onclick = ()=>{
+hideAllScreens();
+registerBox.classList.remove("hidden");
+showMessage("");
+};
+
+document.getElementById("loginHome").onclick = showHome;
+document.getElementById("registerHome").onclick = showHome;
+
+
+// REGISTRATION
+
+document.getElementById("registerForm")
+.addEventListener("submit",async(e)=>{
+
+e.preventDefault();
+
+const name = document.getElementById("memberName").value.trim();
+const mobile = document.getElementById("memberMobile").value.trim();
+const email = document.getElementById("registerEmail").value.trim();
+const password = document.getElementById("registerPassword").value;
+
+const button = document.getElementById("registerButton");
+
+if(!/^[0-9]{10}$/.test(mobile)){
+showMessage("सही 10 अंकों का मोबाइल नंबर डालें।");
+return;
+}
+
+try{
+
+button.disabled = true;
+button.textContent = "PLEASE WAIT...";
+
+const result = await createUserWithEmailAndPassword(
+auth,email,password
+);
+
+const user = result.user;
+
+await setDoc(doc(db,"members",user.uid),{
+
+Name:name,
+Mobile:mobile,
+Email:user.email,
+role:"member",
+Status:"pending",
+createdAt:serverTimestamp()
+
+});
+
+await signOut(auth);
+
+document.getElementById("registerForm").reset();
+
+showHome();
+
+showMessage(
+"Registration सफल! Admin की अनुमति के बाद Account Active होगा।",
+"green"
+);
+
+}catch(error){
+
+if(auth.currentUser){
+await signOut(auth).catch(()=>{});
+}
+
+showMessage("Registration Error: "+error.message);
+
+}finally{
+
+button.disabled = false;
+button.textContent = "CREATE ACCOUNT";
+
+}
+
+});
+
+
+// LOGIN
+
+document.getElementById("loginForm")
+.addEventListener("submit",async(e)=>{
+
+e.preventDefault();
+
+const email = document.getElementById("loginEmail").value.trim();
+const password = document.getElementById("loginPassword").value;
+const button = document.getElementById("loginButton");
+
+try{
+
+button.disabled = true;
+button.textContent = "PLEASE WAIT...";
+
+showMessage("Checking Account...","blue");
+
+const result = await signInWithEmailAndPassword(
+auth,email,password
+);
+
+const user = result.user;
+
+const memberRef = doc(db,"members",user.uid);
+const memberSnap = await getDoc(memberRef);
+
+if(!memberSnap.exists()){
+
+await signOut(auth);
+throw new Error("Member Record नहीं मिला।");
+
+}
+
+const member = memberSnap.data();
+
+const status = String(member.Status||"").trim().toLowerCase();
+const role = String(member.role||"").trim().toLowerCase();
+
+if(status !== "active"){
+
+await signOut(auth);
+
+throw new Error(
+"आपका Account अभी Active नहीं है। Admin से संपर्क करें।"
+);
+
+}
+
+// SELECTED LOGIN TYPE CHECK
+
+if(loginMode === "owner" && role !== "owner"){
+
+await signOut(auth);
+throw new Error("यह Owner Account नहीं है।");
+
+}
+
+if(loginMode === "member" && role !== "member"){
+
+await signOut(auth);
+throw new Error("यह Member Account नहीं है।");
+
+}
+
+currentMember = member;
+
+hideAllScreens();
+
+if(role === "owner"){
+
+ownerDashboard.classList.remove("hidden");
+
+document.getElementById("ownerName").textContent =
+member.Name||"Owner";
+
+document.getElementById("ownerEmail").textContent =
+user.email||"";
+
+memberResults.innerHTML = "";
+
+showMessage("");
+
+return;
+
+}
+
+if(role === "member"){
+
+memberDashboard.classList.remove("hidden");
+
+document.getElementById("memberDashboardName").textContent =
+member.Name||"Member";
+
+document.getElementById("memberDashboardEmail").textContent =
+user.email||"";
+
+document.getElementById("memberDashboardMobile").textContent =
+member.Mobile||"N/A";
+
+document.getElementById("cardName").textContent =
+member.Name||"";
+
+document.getElementById("cardMobile").textContent =
+member.Mobile||"";
+
+document.getElementById("cardId").textContent =
+user.uid.slice(0,10).toUpperCase();
+
+showMessage("");
+
+await loadAnnouncements();
+await loadEvents();
+await loadOfficeBearers();
+await loadMyComplaints();
+
+return;
+
+}
+
+await signOut(auth);
+throw new Error("आपके Account की Role मान्य नहीं है।");
+
+}catch(error){
+
+hideAllScreens();
+loginBox.classList.remove("hidden");
+
+showMessage("Login Error: "+error.message);
+
+}finally{
+
+button.disabled = false;
+button.textContent = "LOGIN";
+
+}
+
+});
+
+
+// OWNER: LOAD MEMBERS
+
+async function loadMembers(mode){
+
+memberResults.innerHTML = "Loading Members...";
+
+try{
+
+const snapshot = await getDocs(collection(db,"members"));
+
+memberResults.innerHTML = "";
+
+let count = 0;
+
+snapshot.forEach((memberDoc)=>{
+
+const member = memberDoc.data();
+
+const status = String(member.Status||"")
+.trim().toLowerCase();
+
+if(mode === "pending" && status === "active") return;
+
+count++;
+
+const card = document.createElement("div");
+card.className = "member-card";
+
+addText(card,"p","Name: "+(member.Name||"N/A"));
+addText(card,"p","Mobile: "+(member.Mobile||"N/A"));
+addText(card,"p","Email: "+(member.Email||"N/A"));
+addText(card,"p","Role: "+(member.role||"N/A"));
+addText(card,"p","Status: "+(member.Status||"N/A"));
+
+if(status !== "active" &&
+memberDoc.id !== auth.currentUser?.uid){
+
+const approve = document.createElement("button");
+
+approve.textContent = "APPROVE / ACTIVATE";
+approve.className = "approve-btn";
+
+approve.onclick = async()=>{
+
+try{
+
+approve.disabled = true;
+
+await updateDoc(
+doc(db,"members",memberDoc.id),
+{Status:"active"}
+);
+
+showMessage("Member Account Active किया गया।","green");
+
+await loadMembers(mode);
+
+}catch(error){
+
+showMessage("Approval Error: "+error.message);
+approve.disabled = false;
+
+}
+
+};
+
+card.appendChild(approve);
+
+}
+
+memberResults.appendChild(card);
+
+});
+
+if(count === 0){
+
+memberResults.textContent =
+mode === "pending"
+? "कोई Pending Member नहीं है।"
+: "कोई Member नहीं मिला।";
+
+}else{
+
+const heading = document.createElement("h3");
+heading.textContent = "Total Members: "+count;
+memberResults.prepend(heading);
+
+}
+
+}catch(error){
+
+memberResults.textContent = "Error: "+error.message;
+
+}
+
+}
+
+document.getElementById("memberListButton").onclick = ()=>{
+showMessage("");
+loadMembers("all");
+};
+
+document.getElementById("pendingButton").onclick = ()=>{
+showMessage("");
+loadMembers("pending");
+};
+
+
+// OWNER: ADD ANNOUNCEMENT
+
+document.getElementById("announcementForm")
+.addEventListener("submit",async(e)=>{
+
+e.preventDefault();
+
+try{
+
+await addDoc(collection(db,"announcements"),{
+
+title:document.getElementById("announcementTitle").value.trim(),
+message:document.getElementById("announcementText").value.trim(),
+createdAt:serverTimestamp()
+
+});
+
+e.target.reset();
+
+showMessage("सूचना प्रकाशित हो गई।","green");
+
+}catch(error){
+
+showMessage("सूचना Error: "+error.message);
+
+}
+
+});
+
+
+// OWNER: ADD EVENT
+
+document.getElementById("eventForm")
+.addEventListener("submit",async(e)=>{
+
+e.preventDefault();
+
+try{
+
+await addDoc(collection(db,"events"),{
+
+title:document.getElementById("eventTitle").value.trim(),
+date:document.getElementById("eventDate").value,
+place:document.getElementById("eventPlace").value.trim(),
+description:document.getElementById("eventDescription").value.trim(),
+createdAt:serverTimestamp()
+
+});
+
+e.target.reset();
+
+showMessage("कार्यक्रम सफलतापूर्वक जोड़ा गया।","green");
+
+}catch(error){
+
+showMessage("Event Error: "+error.message);
+
+}
+
+});
+
+
+// OWNER: ADD OFFICE BEARER
+
+document.getElementById("officeForm")
+.addEventListener("submit",async(e)=>{
+
+e.preventDefault();
+
+try{
+
+await addDoc(collection(db,"officeBearers"),{
+
+name:document.getElementById("officeName").value.trim(),
+role:document.getElementById("officeRole").value.trim(),
+mobile:document.getElementById("officeMobile").value.trim(),
+createdAt:serverTimestamp()
+
+});
+
+e.target.reset();
+
+showMessage("पदाधिकारी जोड़ा गया।","green");
+
+}catch(error){
+
+showMessage("Office Error: "+error.message);
+
+}
+
+});
+
+
+// MEMBER: LOAD ANNOUNCEMENTS
+
+async function loadAnnouncements(){
+
+const box = document.getElementById("announcementsList");
+box.innerHTML = "";
+
+try{
+
+const snap = await getDocs(collection(db,"announcements"));
+
+if(snap.empty){
+
+box.textContent = "अभी कोई सूचना उपलब्ध नहीं है।";
+return;
+
+}
+
+const items = [];
+
+snap.forEach(d=>{
+items.push({id:d.id,...d.data()});
+});
+
+items.sort((a,b)=>
+(b.createdAt?.seconds||0)-(a.createdAt?.seconds||0)
+);
+
+items.forEach(item=>{
+
+const card = document.createElement("div");
+card.className = "info-card";
+
+addText(card,"b",item.title||"महत्वपूर्ण सूचना");
+addText(card,"p",item.message||"");
+
+box.appendChild(card);
+
+});
+  }catch(error){
+
+box.textContent = "सूचनाएँ लोड नहीं हुईं: "+error.message;
+
+}
+
+}
+
+
+// MEMBER: LOAD EVENTS
+
+async function loadEvents(){
+
+const box = document.getElementById("eventsList");
+box.innerHTML = "";
+
+try{
+
+const snap = await getDocs(collection(db,"events"));
+
+if(snap.empty){
+
+box.textContent = "अभी कोई कार्यक्रम उपलब्ध नहीं है।";
+return;
+
+}
+
+const items = [];
+  snap.forEach(d=>items.push(d.data()));
+
+items.sort((a,b)=>
+String(a.date||"").localeCompare(String(b.date||""))
+);
+
+items.forEach(item=>{
+
+const card = document.createElement("div");
+card.className = "member-card";
+
+addText(card,"b",item.title||"कार्यक्रम");
+addText(card,"p","तारीख: "+(item.date||"निर्धारित नहीं"));
+addText(card,"p","स्थान: "+(item.place||"निर्धारित नहीं"));
+addText(card,"p",item.description||"");
+
+box.appendChild(card);
+
+});
+
+}catch(error){
+  box.textContent = "कार्यक्रम लोड नहीं हुए: "+error.message;
+
+}
+
+}
+
+
+// MEMBER: LOAD OFFICE BEARERS
+
+async function loadOfficeBearers(){
+
+const box = document.getElementById("officeList");
+box.innerHTML = "";
+
+try{
+
+const snap = await getDocs(collection(db,"officeBearers"));
+
+if(snap.empty){
+
+box.textContent = "अभी पदाधिकारी सूची उपलब्ध नहीं है।";
+  return;
+
+}
+
+snap.forEach(d=>{
+
+const item = d.data();
+
+const card = document.createElement("div");
+card.className = "member-card";
+
+addText(card,"b",item.name||"");
+addText(card,"p","पद: "+(item.role||""));
+addText(card,"p","मोबाइल: "+(item.mobile||""));
+
+box.appendChild(card);
+
+});
+
+}catch(error){
+
+box.textContent = "सूची लोड नहीं हुई: "+error.message;
+
+}
+
+}
+
+
+// MEMBER: SEND COMPLAINT
+  document.getElementById("complaintForm")
+.addEventListener("submit",async(e)=>{
+
+e.preventDefault();
+
+const button = document.getElementById("complaintButton");
+
+try{
+
+button.disabled = true;
+button.textContent = "भेज रहे हैं...";
+
+await addDoc(collection(db,"complaints"),{
+
+userId:auth.currentUser.uid,
+name:currentMember.Name||"",
+email:auth.currentUser.email,
+type:document.getElementById("complaintType").value,
+message:document.getElementById("complaintMessage").value.trim(),
+createdAt:serverTimestamp()
+
+});
+
+e.target.reset();
+  showMessage("आपका संदेश सफलतापूर्वक भेज दिया गया।","green");
+
+await loadMyComplaints();
+
+}catch(error){
+
+showMessage("Complaint Error: "+error.message);
+
+}finally{
+
+button.disabled = false;
+button.textContent = "भेजें";
+
+}
+
+});
+
+
+// MEMBER: OWN COMPLAINTS
+
+async function loadMyComplaints(){
+
+const box = document.getElementById("myComplaintResults");
+box.innerHTML = "";
+
+try{
+  const q = query(
+collection(db,"complaints"),
+where("userId","==",auth.currentUser.uid)
+);const snap = await getDocs(q);
+
+if(snap.empty){
+
+box.textContent =
+"आपने अभी कोई शिकायत या सुझाव नहीं भेजा है।";
+
+return;
+
+}
+
+snap.forEach(d=>{
+
+const item = d.data();
+
+const card = document.createElement("div");
+card.className = "member-card";
+
+addText(card,"b",item.type||"संदेश");
+addText(card,"p",item.message||"");
+
+box.appendChild(card);
+
+});
+  }catch(error){
+
+box.textContent = "Error: "+error.message;
+
+}
+
+}
+
+
+// OWNER: ALL COMPLAINTS
+
+document.getElementById("complaintListButton")
+.onclick = async()=>{
+
+const box = document.getElementById("complaintResults");
+
+box.innerHTML = "शिकायतें लोड हो रही हैं...";
+
+try{
+
+const snap = await getDocs(collection(db,"complaints"));
+
+box.innerHTML = "";
+
+if(snap.empty){
+  box.textContent = "अभी कोई शिकायत उपलब्ध नहीं है।";
+return;
+
+}
+
+snap.forEach(d=>{
+
+const item = d.data();
+
+const card = document.createElement("div");
+card.className = "member-card";
+
+addText(card,"b",item.type||"संदेश");
+addText(card,"p","नाम: "+(item.name||""));
+addText(card,"p","ईमेल: "+(item.email||""));
+addText(card,"p","संदेश: "+(item.message||""));
+
+box.appendChild(card);
+
+});
+
+}catch(error){
+
+box.textContent = "Error: "+error.message;
+  }
+
+};
+
+
+// LOGOUT FUNCTION
+
+async function logoutUser(){
+
+try{
+
+await signOut(auth);
+
+currentMember = null;
+
+document.getElementById("loginForm").reset();
+
+document.getElementById("complaintResults").innerHTML = "";
+document.getElementById("myComplaintResults").innerHTML = "";
+document.getElementById("memberResults").innerHTML = "";
+showHome();
+
+showMessage("Logout Successful।","green");
+
+}catch(error){
+
+showMessage("Logout Error: "+error.message);
+
+}
+
+}
+
+document.getElementById("logoutButton").onclick = logoutUser;
+
+document.getElementById("memberLogoutButton").onclick = logoutUser;
+
+
+// INITIAL SCREEN
+
+showHome();
+
+</script>
+
+</body>
+</html>
